@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8C0C0"
+    android:orientation="vertical"
+    tools:context=".HomePageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/WelcomMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Welcome user"
+            android:textAlignment="center"
+            android:textColor="#D74444"
+            android:textSize="48sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            android:ems="10"
+            android:hint="Write here description"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/uploadDescription"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Description"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/getDes"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Description"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/showDescription"
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:text="----"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>
